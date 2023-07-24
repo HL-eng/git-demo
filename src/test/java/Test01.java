@@ -72,7 +72,9 @@ public class Test01 {
             // 3. 遍历找到的a标签，并输出它们的文本内容和链接地址
             for (Element link : links) {
                 String linkText = link.text();
-                String linkUrl = link.absUrl("href");
+                //经过测试，这一条语句无法获得href地址
+                //String linkUrl = link.absUrl("href");
+                String linkUrl = link.attr("href"); //根据属性来获取连接地址是可以的
                 System.out.println("Link Text: " + linkText);
                 System.out.println("Link URL: " + linkUrl);
             }
