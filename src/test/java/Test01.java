@@ -86,5 +86,6 @@ public class Test01 {
     @Test
     public void test04(){
     	//测试热修复方法
+	System.out.println("hot-fix modified version1");
     }
 }
