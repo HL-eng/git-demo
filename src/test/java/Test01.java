@@ -88,5 +88,6 @@ public class Test01 {
     	//测试热修复方法
 	System.out.println("master modified version2");
 	System.out.println("hot-fix modified version1");
+	System.out.println("再一次修改一下！！！");
     }
 }
