@@ -82,4 +82,9 @@ public class Test01 {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void test04(){
+    	//测试热修复方法
+    }
 }
