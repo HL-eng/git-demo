@@ -86,8 +86,22 @@ public class Test01 {
     @Test
     public void test04(){
     	//测试热修复方法
-	System.out.println("master modified version2");
-	System.out.println("hot-fix modified version1");
-	System.out.println("再一次修改一下！！！");
+        System.out.println("master modified version2");
+        System.out.println("hot-fix modified version1");
+        System.out.println("再一次修改一下！！！");
+        System.out.println("用于查看暂存区");
+        System.out.println("用于查看暂存区啊啊啊啊啊啊");
+    }
+
+    @Test
+    public void test05(){
+        String path = "E:\\houlei\\项目组周报30周.zip";
+        String fileName = path.substring(path.lastIndexOf("\\")+1,path.lastIndexOf("."));
+        Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+        System.out.println(year);
+        System.out.println(fileName);
+        String issueName = fileName.substring(0,5) + "-" + String.valueOf(year).substring(2) + fileName.substring(5,7);
+        System.out.println(issueName);
     }
 }

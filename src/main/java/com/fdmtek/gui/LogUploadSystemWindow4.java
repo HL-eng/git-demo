@@ -42,18 +42,22 @@ public class LogUploadSystemWindow4 extends JFrame {
         //定义一个提示标签，让用户只能上传.zip格式的文件
         JLabel tipLabel = new JLabel("Tips:仅支持后缀为.zip的压缩文件,否则会上传失败!");
         tipLabel.setFont(new Font("宋体", Font.BOLD, 15)); // 设置字体、样式和大小
-        tipLabel.setBounds(20, 400, 400, 50); // 设置标签的位置和大小
+        tipLabel.setBounds(20, 450, 400, 50); // 设置标签的位置和大小
 
 
-        JButton selectLogFileButton = new JButton("选择日志压缩文件");
-        selectLogFileButton.setSize(180,40);
+        JButton selectLogFileButton = new JButton("选择个人日志压缩文件");
+        selectLogFileButton.setSize(200,40);
         selectLogFileButton.setLocation(160,140);
         selectLogFileButton.setFont(new Font("宋体", 1, 15));
 
+        JButton selectProjectLogFileButton = new JButton("选择项目日志压缩文件");
+        selectProjectLogFileButton.setSize(200,40);
+        selectProjectLogFileButton.setLocation(400,140);
+        selectProjectLogFileButton.setFont(new Font("宋体", 1, 15));
 
         JButton uploadButton = new JButton("上传至服务器");
         uploadButton.setSize(180,40);
-        uploadButton.setLocation(400,140);
+        uploadButton.setLocation(280,410);
         uploadButton.setFont(new Font("宋体", 1, 15));
 
         //信息打印区
@@ -78,6 +82,7 @@ public class LogUploadSystemWindow4 extends JFrame {
         panel.add(tipLabel);
         panel.add(infoLable);
         panel.add(selectLogFileButton);
+        panel.add(selectProjectLogFileButton);
         panel.add(uploadButton);
         frame.add(scrollpane);//将滚动条面板加到窗体
         frame.add(panel);//将上传按钮添加到frame当中
